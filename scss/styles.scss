@@ -1,0 +1,30 @@
+/*
+ * My Styles
+ * Author: Jose Santana
+ * Date: 20 March 2016
+ */
+
+//* Reset */
+@import "smacss/reset";
+
+//* Settings */
+@import "smacss/settings";
+
+//* Vendor */
+//@import "vendor/bootstrap";
+//@import "vendor/foundation";
+
+//* Base */
+@import "smacss/base";
+
+//* Fonts */
+@import "smacss/fonts";
+
+
+//* Layouts */
+@import "smacss/layout/header";
+@import "smacss/layout/main";
+
+
+//* Modules */
+// @import "modules/grid";
