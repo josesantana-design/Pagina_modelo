@@ -58,3 +58,17 @@
 	font-size: $font-size-site;
 	margin-right: 10px;
 }
+
+@include mediaquery($from: mobile, $until: desktop){
+	.banner {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.banner__title {
+		margin-top: 0;
+		margin-bottom: $gutter;
+	}
+}
