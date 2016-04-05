@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'Employify-Iconos';
+    src:    url('../fonts/Employify-Iconos.eot?d6f9y');
+    src:    url('../fonts/Employify-Iconos.eot?d6f9y#iefix') format('embedded-opentype'),
+        url('../fonts/Employify-Iconos.ttf?d6f9y') format('truetype'),
+        url('../fonts/Employify-Iconos.woff?d6f9y') format('woff'),
+        url('../fonts/Employify-Iconos.svg?d6f9y#Employify-Iconos') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+i {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'Employify-Iconos' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icongo:before {
+    content: "\e900";
+}
+.icontoggle:before {
+    content: "\e910";
+}
+.iconux:before {
+    content: "\e911";
+}
+.iconarrow:before {
+    content: "\e912";
+}
+.iconresume:before {
+    content: "\e913";
+}
+.iconsummary:before {
+    content: "\e914";
+}
+.iconadd:before {
+    content: "\e915";
+}
+.iconeducation:before {
+    content: "\e916";
+}
+.iconexperience:before {
+    content: "\e917";
+}
+.iconinstagram:before {
+    content: "\e918";
+}
+.iconlocation:before {
+    content: "\e919";
+}
+.iconweb:before {
+    content: "\e91a";
+}
+.iconfacebook:before {
+    content: "\e91b";
+}
+.iconmark:before {
+    content: "\e91c";
+}
+.icontwitter:before {
+    content: "\e91d";
+}
+.iconvimeo:before {
+    content: "\e91e";
+}
+.icongoogle:before {
+    content: "\e91f";
+}
+.iconreccomendation:before {
+    content: "\e920";
+}
+.iconcontact:before {
+    content: "\e921";
+}
+

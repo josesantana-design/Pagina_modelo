@@ -1,0 +1,190 @@
+.divisions {
+	width: 960px;
+  position: absolute;
+  display: flex;
+  top: 330px;
+  left: 50%;
+  transform: translateX(-50%)
+}
+.skills {
+	width: 50%;
+	background: $gray-light;
+}
+
+.skills__map {
+  background: url('../images/map.png');
+  width: 100%;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: ($gutter + 1);
+}
+
+.skills__map--avatar {
+  border-radius: 100%;
+  width: 90px;
+  height: 90px;
+  transition: all .5s;
+  border: 4px solid $gray-light;
+  &:hover {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.wrap-skills {
+	box-sizing: border-box;
+  width: 100%;
+  padding-left: $gutter;
+  padding-right: $gutter;
+  text-align: center;
+}
+
+.skills__title {
+	color: $main-color;
+	font-size: 1.2em;
+	font-weight: 600;
+	margin-bottom: ($gutter + 1);
+}
+
+.skills__skill {
+	margin-bottom: $gutter;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.skills__skill li {
+	font-size: .8em;
+	background: $gray;
+	border-radius: 5px;
+	padding: .5em;
+	color: #fff;
+	margin-right: $gutter;
+	margin-bottom: $gutter;
+}
+
+.skills__redes {
+	width: 100%;
+	margin-bottom: ($gutter + 1);
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.skills__redes li a{
+  display: flex;
+  align-items: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: $gray;
+  font-size: 0.6em;
+  i {
+    font-size: $font-size-site;
+    padding: 5px;
+    color: #fff;
+    background: $gray;
+    border-radius: 100%;
+    margin-right: ($gutter / 2);
+    margin-left: ($gutter / 2);
+    &:hover {
+      background: #6B7682;
+    }
+  }
+}
+
+.skills2 {
+	width: 50%;
+	height: 230px;
+	padding: ($gutter + 2) ($gutter + 1);
+	background: $pink;
+}
+
+.wrap-view {
+	box-sizing: border-box;
+  width: 100%;
+  padding: ($gutter / 2);
+}
+.view {
+	box-sizing: border-box;
+	display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1.5em $gutter;
+  background: #fff;
+}
+
+.view__resume {
+	width: 120px;
+  color: #fff;
+  padding: 0.7em ($gutter / 2);
+  background-color: $secondary-color;
+  border-radius: 5px;
+  font-size: 0.8em;
+  /* font-weight: 600; */
+  text-decoration: none;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+  	background-color: #F32E71;
+  }
+  i {
+  	font-size: $font-size-site;
+		margin-right: ($gutter / 2);
+  }
+}
+
+.view__marca {
+	width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.view__marca--botton {
+	width: 100px;
+  color: $gray;
+  padding: 0.7em ($gutter / 2);
+  background-color: $gray-light;
+  border-radius: 5px;
+  font-size: 0.8em;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  i {
+  	color: $gray;
+  	font-size: $font-size-site;
+		margin-right: ($gutter / 2);
+  }
+}
+
+.view__marca--bar{
+	color: $gray-light;
+	font-size: 1.2em;
+	margin-left: 5px;
+  margin-right: 5px;
+}
+
+.view__marca--go {
+	color: $gray;
+	background-color: $gray-light;
+  padding: ($gutter / 2);
+  border-radius: 5px;
+	text-decoration: none;
+	i {
+		color: $gray;
+    font-size: $font-size-site;
+	}
+}
+
+@include mediaquery($until: tablet) { 
+  .skills2 {
+    background-color: #333;
+  }
+}

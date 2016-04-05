@@ -1,0 +1,129 @@
+.menu {
+  background-color: $main-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: ($gutter + 1);
+  padding-bottom: ($gutter + 1);
+}
+
+.menu__logo {
+  color: #fff;
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+.menu__navegacion {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu__navegacion li {
+  margin-left: ($gutter * 4);
+}
+
+.menu__navegacion li a {
+  color: #fff;
+  font-size: $font-size-site;
+  text-decoration: none;
+  text-transform: uppercase;
+  &:hover {
+    color: $secondary-color;
+  }
+}
+
+.menu__sign-up {
+  display: flex;
+}
+
+.menu__sign-up li {
+  margin-left: ($gutter * 4);
+  list-style: none;
+}
+
+.menu__sign-up li a {
+  color: #fff;
+  font-size: $font-size-site;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.menu__sign-up--botton {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: ($gutter/2) $gutter;
+}
+
+.menu__sign-up--botton:hover {
+  border-color: $secondary-color;
+  color: $secondary-color;
+}
+
+/*=========== Media Query ===========*/
+
+// --------Desde de tablet----------
+@include mediaquery($until: tablet) {
+  .menu {
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .menu__logo {
+    flex-basis: 100%;
+    margin-bottom: 0;
+  }
+  .menu__navegacion {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 88px;
+    left: 0;
+    width: 100%;
+    background: $secondary-color;
+  }
+  .menu__navegacion li {
+    margin-left: 0;
+  }
+  .menu__navegacion li a {
+    display: block;
+    padding: $gutter;
+    text-align: center;
+    &:hover {
+      background-color: mix($secondary-color, #fff, 80%);
+    }
+  }
+  .menu__sign-up {
+    display: none;
+  }
+}
+
+// --------Desde de tablet - Hasta Desktop----------
+@include mediaquery($from: tablet, $until: desktop) {
+  .menu {
+    flex-wrap: wrap;
+  }
+  .menu__logo {
+    flex-basis: 100%;
+    margin-bottom: ($gutter + 1);
+  }
+  .menu__navegacion li {
+    margin-left: 0;
+    margin-right: ($gutter + 1);
+  }
+  .menu__sign-up {
+    display: flex;
+  }
+  .menu__sign-up li {
+    margin-left: $gutter;
+  }
+}
+
+@include mediaquery($from: desktop) {
+  .menu__navegacion li {
+    margin-left: 0;
+    margin-right: ($gutter + 1);
+  }
+  
+  .menu__sign-up li {
+    margin-left: $gutter;
+  }
+}

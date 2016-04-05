@@ -1,0 +1,60 @@
+//============================================================================================
+//																					BANNER
+//============================================================================================
+
+.banner {
+	width: 100%;
+	height: 490px;
+	background: url("../images/banner.jpg");
+	background-size: cover;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+}
+
+.banner__title {
+	color: #fff;
+	font-size: 1.8em;
+	font-weight: 600;
+	font-style: italic;
+	margin-top: ($gutter + 1);
+	margin-bottom: $gutter;
+}
+
+.banner__items {
+	width: 100%;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.banner__items--profession {
+	display: flex;
+  align-items: center;
+	font-size: $font-size-site;
+	text-transform: uppercase;
+}
+
+.banner__items--profession i {
+	font-size: $gutter;
+	margin-right: 5px;
+	color: $secondary-color;
+}
+
+.banner__items--location {
+	font-size: $font-size-site;
+	display: flex;
+	align-items: center;
+	background: $secondary-color;
+  padding: $gutter/2 $gutter;
+  border-radius: 5px;
+  margin-left: $gutter + 1;
+}
+
+.banner__items--location i {
+	font-size: $font-size-site;
+	margin-right: 10px;
+}

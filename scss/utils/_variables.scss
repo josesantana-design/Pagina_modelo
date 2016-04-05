@@ -1,0 +1,83 @@
+//== Gutter
+//
+//
+
+$gutter: 1em;
+
+//== Site Colors
+//
+//
+$blue-flat: #374760;
+$pink-flat: #f76160;
+$pink: #E91E63;
+$gray-light: #edf4fc;
+
+$main-color: $blue-flat;
+$secondary-color: $pink;
+
+//== Colors
+//
+//
+
+$blue: #2196F3;
+$light-blue: #03A9F4;
+$apple-blue: #00BCD4;
+$gray: #93a4b6;
+$gray-dark: #607D8B;
+
+//== Scaffolding
+//
+//
+
+$body-bg: #fff !default;
+$text-color: $gray-dark !default;
+$link-color: $light-blue !default;
+
+
+//== Typography
+//
+//
+
+$font-family-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-size-base: 16px !default;
+$font-size-site: 0.9em;
+$font-size-h1: 36px !default;
+$font-size-h2: 30px !default;
+$font-size-h3: 24px !default;
+$font-size-h4: 18px !default;
+$font-size-h5: 14px !default;
+$font-size-h6: 12px !default;
+
+
+//== Components
+//
+//
+
+$padding-base: 16px !default;
+$border-radius-base: 5px !default;
+
+//== Buttons
+//
+//
+
+$btn-color: #fff !default;
+$btn-bg: $secondary-color !default;
+$btn-border: #fff !default;
+
+
+//== Media queries breakpoints
+//
+//
+
+// Extra small screen / phone
+$screen-extra-small: 480px !default;
+
+// Small screen / tablet
+$screen-small: 768px !default;
+
+// Medium screen / desktop
+$screen-medium: 992px !default;
+
+// Large screen / wide desktop
+$screen-large: 1200px !default;
+
