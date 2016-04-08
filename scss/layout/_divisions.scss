@@ -1,10 +1,6 @@
 .divisions {
 	width: 960px;
-  // position: absolute;
   display: flex;
-  // top: 330px;
-  // left: 50%;
-  // transform: translateX(-50%)
 }
 .skills {
 	width: 50%;
@@ -95,17 +91,31 @@
   }
 }
 
-.skills2 {
+.video {
 	width: 50%;
-	height: 230px;
-	padding: ($gutter + 2) ($gutter + 1);
-	background: $pink;
+	height: 280px;
+}
+
+.video iframe{
+  width: 100%;
+  height: 390px;
+}
+
+.video__advertisement {
+  background-color: #fff;
+  margin-top: 1em;
+  padding: 1.5em 1em;
+  color: #EDF4FC;
+  font-size: 1.5em;
+  text-align: center;
+  font-style: italic;
+  border: 5px solid #EDF4FC;
 }
 
 .wrap-view {
 	box-sizing: border-box;
   width: 100%;
-  padding: ($gutter / 2);
+  padding: 5px;
 }
 .view {
 	box-sizing: border-box;
@@ -200,9 +210,8 @@
     justify-content: space-around;
     flex-wrap: wrap;
   }
-  .skills2 {
+  .video {
     width: 100%;
-    background-color: red;
   }
 }
 
@@ -226,8 +235,76 @@
     justify-content: space-around;
     flex-wrap: wrap;
   }
-  .skills2 {
+  .video {
     width: 50%;
-    background-color: red;
+    margin-left: 1em;
+  }
+}
+
+.menu__personal {
+  width: 950px;
+  border: 5px solid #EDF4FC;
+  margin: 18em auto 2em;
+}
+
+.menu__personal ul{
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__personal ul li a{
+  display: block;
+  padding: 1em 2em;
+  text-decoration: none;
+  color: $main-color;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: 600;
+  position: relative;
+  &:hover {
+    background-color: #EDF4FC;
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: -16px;
+      left: 45%;
+      width: 0px;
+      height: 0px;
+      border-style: solid;
+      border-width: 10px;
+      border-bottom-width: 0px;
+      border-color: #EDF4FC transparent transparent transparent;
+      z-index: 10;
+    }
+  }
+
+  i {
+    margin-right: 0.5em;
+  }
+}
+
+@include mediaquery($from: mobile, $until: desktop){
+  .menu__personal {
+    width: 100%;
+  }
+
+  .menu__personal ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu__personal ul li {
+    width: 100%;
+    display: flex;
+    text-align: center;
+  }
+  .menu__personal ul li a {
+    width: 100%;
+    &:hover {
+      &:before {
+        border-width: 0;
+      }
+    }
   }
 }
