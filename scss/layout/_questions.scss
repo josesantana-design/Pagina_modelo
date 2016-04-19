@@ -1,0 +1,25 @@
+.questions {
+	background-color: $gray-light;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 3em 1em;
+}
+
+.questions__title{
+	color: $main-color;
+	font-weight: 600;
+	padding-bottom: 1em;
+}
+
+@include mediaquery($from: mobile, $until: tablet){ 
+	.questions__title{
+		font-size: 1.5em;
+	}
+}
+
+.questions__description {
+	color: $gray;
+	line-height: 1.5em;
+}
