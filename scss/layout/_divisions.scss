@@ -41,6 +41,7 @@
 	color: $main-color;
 	font-size: 1.2em;
 	font-weight: 600;
+  font-style: italic;
 	margin-bottom: ($gutter + 1);
 }
 
@@ -130,10 +131,10 @@
 .view__resume {
 	width: 120px;
   color: #fff;
-  padding: 0.7em ($gutter / 2);
+  padding: 0.8em 0.6em;
   background-color: $secondary-color;
   border-radius: 5px;
-  font-size: 0.8em;
+  font-size: 0.7em;
   /* font-weight: 600; */
   text-decoration: none;
   text-transform: uppercase;
@@ -159,10 +160,10 @@
 .view__marca--botton {
 	width: 100px;
   color: $gray;
-  padding: 0.7em ($gutter / 2);
+  padding: 0.8em 0.6em;
   background-color: $gray-light;
   border-radius: 5px;
-  font-size: 0.8em;
+  font-size: 0.7em;
   text-decoration: none;
   text-transform: uppercase;
   display: flex;

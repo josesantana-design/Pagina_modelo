@@ -27,13 +27,25 @@
 	color: #8DA6B8;
 	padding-left: 2em;
 	text-align: justify;
-	span {
-		margin-top: 1em;
+	p {
+    display: flex;
+    flex-direction: column;
 		color: $secondary-color;
+    font-weight: 600;
+    font-style: italic;
+    margin-top: 1em;
+    span {
+      color: $gray;
+      font-weight: 400;
+      font-style: normal;
+      margin-top: 0.5em;
+    }
 	}
 }
 
 .reccomendation__add {
+  display: flex;
+  align-items: center;
   background-color: $secondary-color;
   padding: 1em 2em;
   border-radius: 5px;
@@ -41,6 +53,7 @@
   margin-bottom: 3em;
   i {
   	margin-right: 1em;
+    font-size: 0.8em;
   }
 }
 
